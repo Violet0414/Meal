@@ -1,0 +1,24 @@
+﻿*{
+    margin:0;
+}
+
+.link {
+    text-decoration: none;
+    color: #000;
+    line-height: 40px;
+    width: 100%;
+    border-left: solid 3px #fff;
+}
+
+td a:hover {
+    border-left: solid 2px #563d7c;
+    padding-left:1px;
+}
+
+td a:focus {
+    color: #5cb85c;
+    border-left: solid 3px #563d7c;
+    /*border-left: solid 2px #563d7c;*/
+}
+
+

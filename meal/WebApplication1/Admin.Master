@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Admin.master.cs" Inherits="WebApplication1.Admin" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <script type="text/javascript" src="Scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/master.css" rel="stylesheet" type="text/css"/>
+
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+    <style>
+        .dropdown:hover .dropdown-menu {
+          display: block;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <nav class="navbar navbar-default" style="padding-left:30px; z-index:99">
+          <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  <li><a href="ManageUsers.aspx">Manage users</a></li>
+                  <li><a href="ManageSpecies.aspx">Manage species</a></li>
+                  <li><a href="ManageDishes.aspx">Manage dishes</a></li>
+                  <li><a href="ProcessOrders.aspx">Process orders</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

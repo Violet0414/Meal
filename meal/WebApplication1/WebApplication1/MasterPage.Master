@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.Master.cs" Inherits="WebApplication1.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %> - My ASP.NET Application</title>
+
+    <script type="text/javascript" src="Scripts/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="Scripts/bootstrap.min.js"></script>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="css/master.css" rel="stylesheet" type="text/css"/>
+
+    <asp:ContentPlaceHolder id="head" runat="server"></asp:ContentPlaceHolder>
+    <style>
+        .dropdown:hover .dropdown-menu {
+          display: block;
+        }
+    </style>
+</head>
+<body>
+    <form runat="server">
+        <nav class="navbar navbar-default" style="padding-left:30px; z-index:99">
+          <div class="container-fluid">
+
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+              <ul class="nav navbar-nav">
+                  <li><a runat="server" href="Default.aspx">Home</a></li>
+                  <li><a href="Menu.aspx">Menu</a></li>
+                  <li><a href="ShoppingCart.aspx">ShoppingCart</a></li>
+
+                <li class="dropdown" id="order">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Order<span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="Pending.aspx">Pending</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="inTransit.aspx">In distribution</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="Completed.aspx">Completed</a></li>
+                  </ul>
+                </li>
+
+                <li class="dropdown" id="personal">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                      <asp:Label runat="server" ID="uName">Personal data</asp:Label> <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a runat="server" href="PersonalMessage.aspx">Personal data</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a runat="server" href="UpdateInfo.aspx">Update information</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><asp:Button ID="singOutBtn" CssClass="sing-out" runat="server" Text="Sign out" OnClick="singOutBtn_Click"/></li>
+                  </ul>
+                </li>
+
+
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+
+    </form>
+    
+ 
+   
+</body>
+</html>

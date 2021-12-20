@@ -1,0 +1,50 @@
+﻿
+#outside {
+    /*width: 70%;
+    height: 65%;*/
+    position: absolute;
+    padding:50px;
+    padding-bottom:30px;
+    margin-left:2%;
+}
+
+.input-group {
+    height: 10%;
+    margin-top: 2%;
+    /*margin-right: 3%;*/
+    /*margin-left: 2%;*/
+}
+
+#title1 {
+    background-color:#c3c3c3;
+}
+
+#title2 {
+    background-color: #c3c3c3;
+}
+
+#title3 {
+    background-color: #c3c3c3;
+}
+
+.btn-primary {
+    margin-left: 56.4%;
+    margin-top: 2%;
+    /*position: absolute;*/
+}
+
+.form-control {
+    height: 100%;
+}
+
+#MainContent_Error {
+    line-height: 30px;
+    margin-left: 10px;
+}
+
+
+
+#button, input, select, textarea{
+    height: 100%;
+}
+

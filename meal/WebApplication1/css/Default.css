@@ -1,0 +1,45 @@
+﻿body,ul,a {
+    margin:0;
+    padding:0;
+}
+.carousel-control .glyphicon-chevron-left-1,
+.carousel-control .glyphicon-chevron-right-1 {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    color:#ffffff; 
+    font-size:30px;
+}
+
+
+.left-div{
+    float:left;
+    width:36%;
+}
+
+
+.d-name{
+    font-size: 17px;
+    color:black;
+}
+
+p{
+    font-size:17px;
+    margin-left: 15px;
+}
+
+.hot {
+    /*width: 100%;
+    margin-top: 5px;
+    border: 1px solid black;
+    position: relative;
+    box-shadow: 1px 1px 1px 1px #a1a1a1;
+    background-color: #f3f3f3;*/
+    /*margin: 0px auto;
+    margin-bottom: 20px;
+    border: 1px solid #5C9CC0;
+    background-color: #F2FAFF*/
+}
+

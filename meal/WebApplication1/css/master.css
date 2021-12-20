@@ -1,0 +1,28 @@
+﻿
+#personal {
+    margin-left: 80%;
+    position:absolute;
+}
+
+.navbar-nav{
+    font-size: 18px;
+}
+
+.sing-out {
+    display: block;
+    font-weight: 400;
+    background-color: transparent;
+    border: none;
+    padding: 3px 20px;
+    clear: both;
+    width: 100%;
+    height:auto;
+    text-align: left;
+    line-height: 1.42857143;
+}
+
+.sing-out:hover{
+    background-color:#f5f5f5;
+}
+
+
